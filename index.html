@@ -884,22 +884,24 @@
             }
             
             // Criar mensagem para WhatsApp
-            const message = `📱 *PEDIDO DE PACOTE DE INTERNET* 📱
+            const message = ` *PEDIDO DE PACOTE DE INTERNET* 
             
-🔥 *PACOTE SELECIONADO:*
+ *PACOTE SELECIONADO:*
 • *Tipo:* ${selectedPackage.type}
 • *Preço:* ${selectedPackage.price} MT
 • *Dados:* ${selectedPackage.data} MB
 • *Validade:* ${selectedPackage.validity} dia${selectedPackage.validity > 1 ? 's' : ''}
 
-👤 *DADOS DO CLIENTE:*
+ *DADOS DO CLIENTE:*
 • *Nome:* ${customerName}
 • *Telefone:* ${customerPhone}
 • *Província:* ${province}
 • *Distrito:* ${district}
 • *Documento:* ${documentType}
 
-⏰ Por favor, confirme o pedido e forneça instruções de pagamento.`;
+<h3>Método de pagamento Paga facíl<h3>
+Código comercial 1216691
+Nome:Momade - Venda online.`;
             
             // Codificar a mensagem para URL
             const encodedMessage = encodeURIComponent(message);
